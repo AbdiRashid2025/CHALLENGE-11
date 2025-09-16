@@ -62,9 +62,138 @@ h2 {
 .img img {
   height: 30vh;
 }
+.abouts {
+  padding: 9.6rem 0 9.6rem 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* display: flex; */
+}
+
+.about {
+  max-width: 400px;
+  /* margin: auto; */
+  background: #fff;
+  /* padding: 20px; */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.img img {
+  width: 70%;
+}
+/* .abouts img {
+  width: 40%;
+} */
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+.progress-bar {
+  height: 10px;
+  background: #0026ff; /* blue */
+  width: 0%;
+  transition: width 1s ease;
+}
+
+/* Example skill widths */
+.graphic {
+  width: 90%;
+}
+.website {
+  width: 80%;
+}
+.app {
+  width: 75%;
+}
+.ux {
+  width: 95%;
+}
 
 .service {
-  padding: 2.6rem;
+  padding: 9.6rem 0 9.6rem 4.6rem;
+  background-color: rgb(229, 239, 243);
 }
 .service h2 {
+}
+.boxs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.4); */
+}
+.box {
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+}
+.design {
+  /* align-self: center; */
+  /* text-align: center; */
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.portfolio {
+  padding: 2.4rem 0 9.6rem 4.6rem;
+}
+.portfolio h2 {
+  text-align: center;
+  font-size: 4.2rem;
+}
+.portfolio p {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2.8rem;
+}
+.btns {
+  display: flex;
+  gap: 3.2rem;
+  margin-bottom: 4.8rem;
+  justify-content: center;
+  align-items: center;
+}
+.btns a {
+  text-decoration: none;
+  padding: 0.4rem;
+  background-color: #ddd;
+  border-radius: 10px;
+  color: rgb(47, 47, 47);
+}
+.btns a:nth-child(3) {
+  background-color: rgb(77, 77, 212);
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.feature {
+  border-radius: 10px;
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+}
+.feature img {
+  margin-bottom: 3rem;
+}
+.feature p {
+  color: #333;
 }
