@@ -17,12 +17,12 @@
 }
 .nav-links {
   display: flex;
-  justify-content: space-around;
   list-style: none;
 }
 .nav-link {
   color: rgb(157, 157, 239);
   text-decoration: none;
+  justify-content: space-around;
 }
 
 .main-container {
@@ -181,16 +181,81 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
+  justify-content: center;
 }
 
 .feature {
+  transition: all 0.3s;
   border-radius: 10px;
-
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
 }
+.feature:hover {
+  transform: rotate(-360deg);
+}
 .feature img {
+  width: 100%;
   margin-bottom: 3rem;
 }
 .feature p {
   color: #333;
+}
+.contact {
+  background-color: #2845eb;
+  text-align: center;
+}
+.contact h2 {
+  color: #ddd;
+  font-size: 3.5rem;
+}
+
+/* form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+} */
+
+select,
+input {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  border: none;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+textarea {
+  margin: 1.6rem auto;
+  width: 60%;
+  display: block;
+}
+.send:hover {
+  background-color: #ddd;
+  color: #333;
+}
+.send {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 6.6rem;
+}
+
+.footer {
+  background-color: #2845eb;
+  padding: 0 0 4.8rem 4.8rem;
+  color: #ddd;
+}
+.footer-text {
+  font-size: 1.8rem;
+}
+
+.nav-footer {
+  list-style: none;
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.c {
+  padding-right: 1.5rem;
+  border-right: 5px solid red;
+  color: #ebe6e6;
 }
