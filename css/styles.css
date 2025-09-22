@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "inter";
 }
 .header {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2.4rem;
 }
 .logo {
   color: rgb(157, 157, 239);
@@ -17,14 +21,16 @@
 }
 .nav-links {
   display: flex;
+  justify-content: space-around;
   list-style: none;
 }
 .nav-link {
   color: rgb(157, 157, 239);
   text-decoration: none;
-  justify-content: space-around;
 }
-
+.nav-link:hover {
+  color: #0026ff;
+}
 .main-container {
   padding: 2.6rem;
   background-color: rgb(229, 239, 243);
@@ -124,8 +130,6 @@ h2 {
   padding: 9.6rem 0 9.6rem 4.6rem;
   background-color: rgb(229, 239, 243);
 }
-.service h2 {
-}
 .boxs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -207,13 +211,6 @@ h2 {
   color: #ddd;
   font-size: 3.5rem;
 }
-
-/* form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-} */
-
 select,
 input {
   width: 50%;
@@ -245,6 +242,7 @@ textarea {
 }
 .footer-text {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .nav-footer {
